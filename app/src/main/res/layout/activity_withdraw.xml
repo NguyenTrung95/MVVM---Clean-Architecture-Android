@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.nencer.thesieure.service.wallet.model.WalletDepositModel" />
+    </data>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/activity_sign_up_title_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                    android:id="@+id/btn_back_button"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:tint="@color/black_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_back_button" />
+
+            <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="Rút tiền"
+                    android:textColor="@color/black_1"
+                    android:textSize="@dimen/_18sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+                android:background="@color/grey_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+        <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Ví: 00001234124124 - 4,241,213VND"
+                app:cardUseCompatPadding="true"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tv_bank"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="Chọn ngân hàng:" />
+
+                <ImageView
+                        android:id="@+id/btn_add"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_toEndOf="@+id/tv_bank"
+                        android:backgroundTint="@color/black_1"
+                        android:background="@android:drawable/ic_menu_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_bank"
+                        android:background="@drawable/bg_editext"
+                        android:padding="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp">
+                    <Spinner
+                            android:id="@+id/spnBank"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:textStyle="bold" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/edt_amount"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="Số tiền muốn rút:" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_amount"
+                        android:inputType="number"
+                        android:text="@{viewModel.amount}"
+                        android:digits="0123456789,"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/bg_border_black"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:hint="Số tiền"
+                        android:layout_height="@dimen/_35sdp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tv_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_alignParentStart="true"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="Nội dung rút tiền:" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtDes"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_below="@+id/tv_msg"
+                        android:background="@drawable/bg_border_black"
+                        android:textSize="@dimen/_13sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:maxLines="6"
+                        android:hint="Ghi chú"
+                        android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <Button
+                    android:id="@+id/btn_history"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_100dp_red_box"
+                    android:layout_height="@dimen/_32sdp"
+                    android:textColor="@color/white_1"
+                    android:text="Lịch sử"
+                    />
+
+            <Button
+                    android:id="@+id/btn_deposit"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_green"
+                    android:layout_height="@dimen/_32sdp"
+                    android:textColor="@color/white_1"
+                    android:text="Rút tiền"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

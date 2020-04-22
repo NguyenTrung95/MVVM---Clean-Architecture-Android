@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">TheSieuRe</string>
+    <!--User-->
+    <string name="activity_sign_up_title_password_edit_text_hint">●●●●●●●●</string>
+    <!--Dang nhap-->
+    <string name="main_settings_login_button_text">Đăng nhập</string>
+    <string name="activity_sign_in_title_id">Tên đăng nhập</string>
+    <string name="activity_sign_in_title_password">Mật khẩu</string>
+    <string name="activity_sign_in_find_password_description"><u>Quên mật khẩu của bạn?</u></string>
+    <string name="activity_sign_in_not_yet_user_description">Chưa là thành viên?</string>
+    <string name="activity_sign_in_sign_in_description">Đăng ký</string>
+    <string name="username_not_null">User name cannot be empty</string>
+    <string name="password_not_null">Password name cannot be empty</string>
+
+
+    <!--Dang ky-->
+    <string name="activity_sign_up_title_toolbar">Đăng ký</string>
+    <string name="text_full_name_title">Họ tên</string>
+    <string name="text_email_or_phone_number">Email hoặc số điện thoại</string>
+    <string name="text_verification_code">Mã xác thực</string>
+
+
+    <string name="dialog_exceed_recommend_warning_title">Cảnh báo trường nhập của bạn có vấn đề</string>
+    <string name="dialog_warning_description">Vượt quá lượng khuyến cáo. \ Caffein quá mức \ n khiến huyết áp tăng \ n Nếu kéo dài \ n gây ra xơ cứng động mạch!</string>
+    <string name="text_logo_ic">Logo icon</string>
+    <string name="text_back_button">Back button</string>
+    <string name="txt_forgot_password">Khôi phục mật khẩu</string>
+    <string name="txt_email_address">Địa chỉ Email</string>
+    <string name="txt_change_password">Đổi mật khẩu</string>
+    <string name="txt_password_currency">Mật khẩu hiện tại:</string>
+    <string name="txt_old_password">Mật khẩu cũ</string>
+    <string name="txt_new_password">Mật khẩu mới:</string>
+    <string name="txt_verify_password">Xác nhận mật khẩu:</string>
+    <string name="txt_verify">Xác nhận</string>
+    <string name="msg_verify">Mời bạn nhập OTP</string>
+    <string name="txt_verify_msg">Mã xác thực</string>
+    <string name="txt_pay">Thanh toán</string>
+    <string name="txt_my_order">Giỏ hàng</string>
+    <string name="txt_notify_order">Giỏ hàng rỗng</string>
+    <string name="activity_order_detail_title_toolbar">Chi tiết đơn hàng</string>
+    <string name="txt_copy">Copy</string>
+    <string name="txt_next_buy">Tiếp tục mua hàng</string>
+    <string name="txt_copy_all">Copy tất cả</string>
+    <string name="text_status">Trạng thái: </string>
+    <string name="txt_phone">Số điện thoại</string>
+    <string name="activity_user_info">Thông tin tài khoản</string>
+    <string name="text_user_name">Tên đăng nhập</string>
+    <string name="text_name">Họ và tên</string>
+    <string name="text_email_title">Email:</string>
+    <string name="text_phone_title">Số điện thoại:</string>
+    <string name="text_group_title">Nhóm:</string>
+    <string name="text_tv_xac_thuc_sdt_title">Xác thực số điện thoại:</string>
+    <string name="text_tv_xac_thuc_email_title">Xác thực email:</string>
+    <string name="text_tv_xac_thuc_giay_to_title">Xác thực trên giấy tờ:</string>
+    <string name="text_date_register_title">Ngày đăng kí:</string>
+    <string name="text_wallet_title">Ví điện tử:</string>
+    <string name="txt_edit">Sửa thông tin</string>
+    <string name="txt_name">Họ và tên</string>
+    <string name="txt_gioi_tinh">Giới tính</string>
+    <string name="txt_mk_cap_2">Mật khẩu cấp 2</string>
+    <string name="activity_history_detail_title_toolbar">Thông tin về sản phẩm thẻ</string>
+    <string name="txt_new_password_title">Mật khẩu mới:</string>
+    <string name="txt_re_password">Xác nhận mật khẩu</string>
+    <string name="txt_re_password_title">Xác nhận mật khẩu:</string>
+    <string name="text_name_tile">Họ và tên:</string>
+    <string name="text_user_name_title">Tên đăng nhập:</string>
+    <string name="activity_tranfer">Chuyển số dư</string>
+    <string name="txt_tranfer">Chuyển tiền</string>
+    <string name="txt_to_user_name">Tên người nhận</string>
+    <string name="text_amount">Số tiền</string>
+    <string name="text_msg">Nội dung</string>
+    <string name="txt_to_acc_name">Tài khoản nhận</string>
+
+
+</resources>

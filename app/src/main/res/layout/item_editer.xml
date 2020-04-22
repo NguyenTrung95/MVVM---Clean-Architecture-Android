@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp">
+
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            tools:text="Mật khẩu hiện tại:" />
+
+    <EditText
+            android:id="@+id/edt_value"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:background="@drawable/bg_editext" />
+
+</LinearLayout>

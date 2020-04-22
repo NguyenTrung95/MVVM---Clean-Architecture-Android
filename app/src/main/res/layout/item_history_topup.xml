@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/activity_sign_in_constraint_parent_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tv_ma_don_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Mã đơn:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                    android:id="@+id/tv_ma_don"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/text_user_name"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="SP5E076CD91E749" />
+
+            <TextView
+                    android:id="@+id/tv_status_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Trạng thái:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_ma_don_title" />
+
+            <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="Chờ nạp"
+                    android:background="@drawable/background_orange_box"
+                    android:maxLines="3"
+                    android:textColor="@color/white_1"
+                    app:layout_constraintLeft_toRightOf="@+id/tv_san_pham_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_ma_don_title" />
+
+            <TextView
+                    android:id="@+id/tv_thue_bao_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Thuê bao:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_status_title" />
+
+            <TextView
+                    android:id="@+id/tv_thue_bao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="VINAPHONE_TRATRUOC 0981349571"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_status_title" />
+
+            <TextView
+                    android:id="@+id/tv_can_nap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Cần nạp"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_thue_bao_title" />
+
+            <TextView
+                    android:id="@+id/tv_can_nap_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="10.000"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_thue_bao_title" />
+
+            <TextView
+                    android:id="@+id/tv_da_nap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Đã nạp:"
+                    android:visibility="visible"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_can_nap" />
+
+            <TextView
+                    android:id="@+id/tv_da_nap_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="0/100"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_can_nap" />
+
+            <TextView
+                    android:id="@+id/tv_ck_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="CK"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_da_nap" />
+
+            <TextView
+                    android:id="@+id/tv_ck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="22%"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_da_nap" />
+
+
+            <TextView
+                    android:id="@+id/tv_phi_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Phí:"
+                    android:visibility="gone"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_ck_title" />
+
+            <TextView
+                    android:id="@+id/tv_phi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="0đ"
+                    android:visibility="gone"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_ck_title" />
+            <TextView
+                    android:id="@+id/tv_pay_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Phải trả:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_phi_title" />
+
+            <TextView
+                    android:id="@+id/tv_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="7,800 VND"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_phi_title" />
+
+            <TextView
+                    android:id="@+id/tv_tk_thanh_toan_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="T.toán:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_pay_title" />
+
+            <TextView
+                    android:id="@+id/tv_tk_thanh_toan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:background="@drawable/background_green"
+                    android:text="Đã trả"
+                    android:textColor="@color/white_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_pay_title" />
+
+            <TextView
+                    android:id="@+id/tv_date_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Ngày tạo:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tk_thanh_toan" />
+
+            <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:text="11-01-2020"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tk_thanh_toan" />
+
+            <TextView
+                    android:id="@+id/tv_note_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Chi chú:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_date" />
+
+            <TextView
+                    android:id="@+id/tv_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:text="11-01-2020"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_date" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

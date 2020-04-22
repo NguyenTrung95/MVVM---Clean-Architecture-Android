@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/bg_common_alert_dialog">
+
+    <TextView
+            android:layout_margin="@dimen/_20sdp"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/color_text_grayish_brown"
+            android:textSize="@dimen/_14sdp"
+            tools:text="SỬA THÔNG TIN TÀI KHOẢN" />
+    <LinearLayout
+            android:id="@+id/ll_form"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp">
+
+        <TextView
+                android:id="@+id/tv_gioi_tinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:text="Giới tính:" />
+
+        <FrameLayout
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/bg_editext"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_1sdp"
+                android:layout_height="wrap_content">
+            <Spinner
+                    android:id="@+id/spn_gioi_tinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:hint="@string/text_name"
+                    android:singleLine="true" />
+        </FrameLayout>
+
+
+        <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/tv_ngay_sinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:text="Ngày sinh:" />
+
+        <TextView
+
+                android:id="@+id/edt_ngay_sinh"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:hint="Chọn ngày sinh"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:background="@drawable/bg_editext" />
+
+        <TextView
+                android:id="@+id/tv_quoc_gia"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:text="Quốc gia:" />
+
+        <FrameLayout
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/bg_editext"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_1sdp"
+                android:layout_height="wrap_content">
+            <Spinner
+                    android:id="@+id/spn_quoc_gia"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:hint="@string/text_name"
+                    android:singleLine="true" />
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/tv_mat_khau_cap_2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:text="Mật khẩu cấp 2:" />
+
+        <EditText
+                android:id="@+id/edt_mat_khau_c2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:hint="Nhập mật khẩu cấp 2"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:background="@drawable/bg_editext" />
+
+        <TextView
+                android:id="@+id/tv_email"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:text="Email:" />
+
+        <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:hint="Nhập email"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:background="@drawable/bg_editext" />
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btn_action"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:textColor="@color/white_1"
+            android:background="@drawable/background_green"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_form"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            tools:text="Cập nhật thông tin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

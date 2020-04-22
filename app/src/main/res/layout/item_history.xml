@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardUseCompatPadding="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/activity_sign_in_constraint_parent_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tv_ma_giao_dich_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:text="Mã giao dịch:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                    android:id="@+id/tv_ma_giao_dich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/text_user_name"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="SP5E076CD91E749" />
+
+            <TextView
+                    android:id="@+id/tv_san_pham_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Sản phẩm:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_ma_giao_dich_title" />
+
+            <TextView
+                    android:id="@+id/tv_san_pham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/text_user_name"
+                    android:textColor="@color/black_1"
+                    android:maxLines="3"
+                    android:paddingStart="@dimen/_5sdp"
+                    app:layout_constraintLeft_toRightOf="@+id/tv_san_pham_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_ma_giao_dich_title"
+                    tools:text="1 Viettel 10.000đg" />
+
+            <TextView
+                    android:id="@+id/tv_tk_thanh_toan_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="TT thanh toán	:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_san_pham_title" />
+
+            <TextView
+                    android:id="@+id/tv_tk_thanh_toan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_1sdp"
+                    android:paddingBottom="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/background_green"
+                    android:text="Đã thanh toán"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:textColor="@color/white_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_san_pham_title" />
+
+            <TextView
+                    android:id="@+id/tv_tt_don_hang_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="TT đơn hàng: "
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tk_thanh_toan_title" />
+
+            <TextView
+                    android:id="@+id/tv_don_hang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_1sdp"
+                    android:paddingBottom="@dimen/_1sdp"
+                    android:background="@drawable/background_green"
+                    android:text="Hoàn thành"
+                    android:textColor="@color/white_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tk_thanh_toan_title" />
+
+            <TextView
+                    android:id="@+id/tv_so_tien_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Số tiền:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tt_don_hang_title" />
+
+            <TextView
+                    android:id="@+id/tv_so_tien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/text_user_name"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tt_don_hang_title"
+                    tools:text="10,740 VND" />
+
+            <TextView
+                    android:id="@+id/tv_ngay_tao_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Ngày tạo:"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_so_tien_title" />
+
+            <TextView
+                    android:id="@+id/tv_ngay_tao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/text_user_name"
+                    android:textColor="@color/black_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_so_tien_title"
+                    tools:text="28-12-2019 21:55" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

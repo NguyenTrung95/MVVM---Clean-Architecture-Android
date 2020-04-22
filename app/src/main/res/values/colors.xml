@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#83d7aa</color>
+    <color name="colorPrimaryDark">#2db16b</color>
+    <color name="colorAccent">#2db16b</color>
+
+    <color name="background_status_bar_transparent">#00000000</color>
+
+    <color name="colorGradientStart">#2db16b</color>
+    <color name="colorGradientCenter">#2db16b</color>
+    <color name="colorGradientEnd">#83d7aa</color>
+
+    <color name="colorCategoryExceedGradientStart">#f06676</color>
+    <color name="colorCategoryExceedGradientCenter">#f06676</color>
+    <color name="colorCategoryExceedGradientEnd">#ffafb9</color>
+
+    <color name="colorCategoryUserAvgGradientStart">#dfdfdf</color>
+    <color name="colorCategoryUserAvgGradientCenter">#dfdfdf</color>
+    <color name="colorCategoryUserAvgGradientEnd">#c2c2c2</color>
+
+    <color name="color_text_white">#ffffff</color>
+    <color name="color_text_white_opacity_80_percent">#CCffffff</color>
+    <color name="color_text_jade_green">#2db16b</color>
+    <color name="color_text_pale_turquoise">#c0e7d2</color>
+    <color name="color_text_grayish_brown">#434343</color>
+    <color name="color_text_brownish_grey">#747474</color>
+    <color name="color_text_apricot">#FFA36D</color>
+    <color name="color_text_brownish_grey_opacity_80_percent">#CC747474</color>
+    <color name="color_text_brownish_grey_opacity_20_percent">#33747474</color>
+    <color name="color_text_settings_green">#4aad78</color>
+    <color name="color_text_edit_text_hint">#61000000</color>
+    <color name="color_text_dialog_warning_title">#f15555</color>
+    <color name="color_text_dialog_warning_cancel_button">#FFA36D</color>
+    <color name="background_color_dialog_warning_confirm_button">#FFA36D</color>
+
+    <color name="background_main_white">#f9f9f9</color>
+    <color name="background_white_2">#ffffff</color>
+
+    <color name="background_color_tab_layout">#ffffff</color>
+    <color name="background_color_tab_selected">#fba676</color>
+    <color name="background_color_tab_un_selected">#747474</color>
+    <color name="background_color_tab_pressed">#747474</color>
+
+    <color name="background_color_history_add_button">#FFA36D</color>
+    <color name="background_color_personal_save_button">#FFA36D</color>
+
+    <color name="background_color_show_more_button">#fba676</color>
+    <color name="background_color_show_analysis_button">#FFA36D</color>
+    <color name="background_color_settings_log_in_out_button">#FFA36D</color>
+    <color name="background_color_notification_switch_button_inside">#c8e6d6</color>
+    <color name="background_color_notification_switch_button_outside">#4aad78</color>
+    <color name="background_color_notification_switch_button_thumb">#4aad78</color>
+    <color name="color_tab_default">#010002</color>
+
+    <!--Grey-->
+    <color name="grey_1">#bcbcbc</color>
+    <color name="grey_2">#7b7b7b</color>
+    <color name="grey_3">#999999</color>
+    <color name="grey_4">#303341</color>
+
+    <!--Yellow-->
+    <color name="yellow_1">#edc61a</color>
+    <color name="yellow_2">#ffd34c</color>
+    <color name="yellow_3">#b3edc61a</color>
+
+    <!--Orange-->
+    <color name="orange_1">#f7931a</color>
+
+    <!--Red-->
+    <color name="red_1">#ce0019</color>
+    <color name="red_2">#FF0000</color>
+    <color name="red_3">#D0021B</color>
+
+    <!--Blue-->
+    <color name="blue_1">#0060a3</color>
+    <color name="blue_2">#1b3b6b</color>
+    <color name="blue_3">#031b40</color>
+    <color name="blue_4">#425a68</color>
+    <color name="blue_5">#0360a4</color>
+    <color name="blue_6">#00396d</color>
+    <color name="blue_7">#02528e</color>
+    <color name="blue_8">#0a87c6</color>
+    <color name="blue_9">#007dff</color>#3B5998
+    <color name="blue_10">#3B5998</color>
+
+    <!--Green-->
+    <color name="green_1">#0ebc00</color>
+    <color name="green_2">#48d2a0</color>
+
+    <!--White-->
+    <color name="white_1">#ffffff</color>
+    <color name="white_2">#f0f0f0</color>
+    <color name="white_3">#ebebeb</color>
+
+    <!--Black-->
+    <color name="black_1">#000000</color>
+    <color name="black_2">#cc000000</color>
+    <color name="black_3">#e6000000</color>
+
+    <!--Transparent-->
+    <color name="transparent_1">#00000000</color>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_count_name_card"
+        tools:text="Viettel 20.000 đ"
+        android:textSize="@dimen/_14sdp"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        tools:textColor="@color/black_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/grey_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            tools:textColor="@color/black_1"
+            android:id="@+id/tv_seri"
+            tools:text="Seri : 09242342423"
+            android:textSize="@dimen/_13sdp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_copy_seri"
+            android:text="@string/txt_copy"
+            android:textSize="@dimen/_12sdp"
+            android:textAlignment="center"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_32sdp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_code"
+            tools:text="Mã nạp : 09242342423"
+            android:textSize="@dimen/_13sdp"
+            tools:textColor="@color/black_1"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_copy_code"
+            android:text="@string/txt_copy"
+            android:textSize="@dimen/_12sdp"
+            android:textAlignment="center"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_32sdp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/grey_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"/>
+</LinearLayout>

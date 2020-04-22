@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
+
+kapt {
+    generateStubs = true
+    correctErrorTypes true
+}
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.nencer.thesieure"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+            //we support only armeabi-v7a and x86 for reduce apk size (x86 also can be removed in future)
+        }
+    }
+
+    aaptOptions {
+        cruncherEnabled = false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                   def time = new Date().format("HH'h'mm")
+                   def newName = output.outputFile.name
+                    newName = newName.replace("app", "Nencer")
+                    newName = newName.replace("-release", "_$variant.versionName($variant.versionCode)_$time")
+                    outputFileName = newName
+                }
+            }
+
+
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    dataBinding {
+        enabled = true
+    }
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //module
+    implementation project(':imageslider')
+
+    //multiscreen
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+
+    //Androidx
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    //koin
+    implementation "org.koin:koin-androidx-scope:2.0.1"
+    implementation "org.koin:koin-androidx-viewmodel:2.0.1"
+    implementation "org.koin:koin-androidx-ext:2.0.1"
+
+    //okhttp + retrofit(2.6.0)
+    implementation("com.squareup.okhttp3:logging-interceptor:4.0.0")
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    //Android KTX  Kotlin ， Android Jetpack
+    implementation 'androidx.core:core-ktx:1.1.0'
+
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-rc03'
+
+
+    //paginate
+    implementation 'com.github.markomilos:paginate:0.5.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+
+    //Optional: see how to use the utility.
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar'
+
+    implementation 'com.jakewharton.timber:timber:4.6.0'
+
+    implementation 'me.abhinay.input:currency-edittext:1.1'
+    implementation 'com.github.drawers:SpinnerDatePicker:2.0.1'
+
+
+}

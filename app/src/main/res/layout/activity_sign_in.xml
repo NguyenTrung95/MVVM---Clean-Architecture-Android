@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewModel" type="com.nencer.thesieure.service.user.model.UserLoginModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_sign_in_constraint_parent_layout"
+        android:background="@color/blue_7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctl_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/imv_logo"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:contentDescription="@string/text_logo_ic"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <EditText
+                android:id="@+id/activity_sign_in_id_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/background_100dp_white_box"
+                android:elevation="@dimen/_6sdp"
+                android:gravity="center"
+                android:hint="@string/text_email_or_phone_number"
+                android:includeFontPadding="false"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@={viewModel.username}"
+                android:textColor="@color/blue_1"
+                android:textCursorDrawable="@drawable/edit_text_cursor_drawable"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imv_logo"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/activity_sign_in_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/background_100dp_white_box"
+                android:elevation="@dimen/_6sdp"
+                android:gravity="center"
+                android:hint="@string/activity_sign_in_title_password"
+                android:includeFontPadding="false"
+                android:inputType="textPassword"
+                android:maxLength="13"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@={viewModel.password}"
+                android:textColor="@color/blue_1"
+                android:textCursorDrawable="@drawable/edit_text_cursor_drawable"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_sign_in_id_edit_text"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/activity_sign_in_find_password_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:includeFontPadding="false"
+                android:text="QUÊN MẬT KHẨU"
+                android:textColor="@color/white_1"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_sign_in_password_edit_text" />
+
+            <TextView
+                android:id="@+id/activity_sign_in_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:enabled="true"
+                android:background="@drawable/background_green"
+                android:elevation="@dimen/_6sdp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="@dimen/component_login_button_width"
+                android:minHeight="@dimen/_52sdp"
+                android:text="@string/main_settings_login_button_text"
+                android:textColor="@color/color_text_white"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_sign_in_find_password_text_view" />
+
+            <LinearLayout
+                android:id="@+id/activity_sign_in_not_yet_user_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                app:layout_constraintTop_toBottomOf="@+id/activity_sign_in_password_edit_text"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <TextView
+                    android:id="@+id/activity_sign_in_let_go_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                        android:textStyle="bold"
+                    android:text="ĐĂNG KÝ"
+                    android:textColor="@color/green_2"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

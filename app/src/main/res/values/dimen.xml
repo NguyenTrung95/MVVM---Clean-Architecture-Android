@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_settings_component_height">64dp</dimen>
+
+    <dimen name="activity_today_recommend_column_spacing">52dp</dimen>
+    <dimen name="activity_today_recommend_column_spacing_half">26dp</dimen>
+
+    <dimen name="component_edit_text_height">48dp</dimen>
+
+    <dimen name="component_login_button_width">112dp</dimen>
+    <dimen name="component_login_button_height">52dp</dimen>
+
+    <dimen name="loading_indicator_duration">30</dimen>
+
+</resources>
