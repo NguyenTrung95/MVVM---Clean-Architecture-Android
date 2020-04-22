@@ -1,9 +1,5 @@
-# cardapk
-Android Card Docs
-### [API Link](https://documenter.getpostman.com/view/5740908/SVmvTJwv?version=latest#6bda9bfa-88be-4962-95f4-709f394a09f6)
-### [Web Link](https://thesieure.com/)
 
-### 1. An application that Nencer  Wallet buy card
+### 1.Base concepts cho các dự án Android
 
 ### 2. Base Concepts
   #### Modern Android
